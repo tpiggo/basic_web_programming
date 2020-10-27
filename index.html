@@ -7,16 +7,17 @@
     <head>
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
-        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" type="text/css" href="styles/themes.css" />
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
         <meta charset="utf-8" />
 
         <title>TP Solutions</title>
-        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="shortcut icon" href="images/favicon.ico">
     </head>
     <body>
         <!-- Layout: header portion with body and a footer-->
         <nav id="navbar-container">
-            <a id="navbar-icon" href="#home"><img id="logo-icon" src="t-logo2.jpg"></a>
+            <a id="navbar-icon" href="#home"><img id="logo-icon" src="images/t-logo2.jpg"></a>
             <div id="nav-right">
                 <a class="navbar-item" href="#home">Home</a>
                 <a class="navbar-item" href="#about">About</a>
@@ -35,23 +36,22 @@
                 </div>
                 <div class="header-item header-right">
                     Want to work with me? Whether it be to talk about Computer Science or a project, don't hesitate to get in touch!<br> 
-                    <button id="header-btn">Connect with me!</button>
+                    <a href="#contact"><button id="header-btn">Connect with me!</button></a>
                 </div>
             </div>
         </header>
         <div id="main-container">
             <section id="about">
                 <div class="about-item">
-                    <h2> Hello There!</h2>
+                    <h2 class="about-head"> Hello There!</h2>
                     <p id="about-paragraph">    
                         My name is Tim! I'm a U3 student at McGill. Currently learning about Operating systems and Macroeconomics.
                         I love advancing my knowledge and I am very interested in web development. Other interests include: 
                         Space flight, aviation, rock music and football (European).
                     </p>
-                    <button id="about-btn">Find out more!</button>
+                    <a href="#contact"><button id="about-btn">Find out more!</button></a>
                 </div>
-                <div> <!-- Image goes here!! --></div>
-
+                <div class="about-item"><img class="about-img" src="images/internet-computer-pic.jpg"></div>
             </section>
             <section id="projects"></section>
             <section id="contact"></section>

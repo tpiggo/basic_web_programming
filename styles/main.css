@@ -3,6 +3,7 @@ body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 #navbar-container{
+    background: rgba(0,0,0,0.5);
     position: fixed;
     display: inline-block;
     width: 95%;
@@ -41,7 +42,7 @@ body{
 #header-box{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin: 25% 0;
+    padding: 25% 0;
 }
 .header-item{
     margin: 0% 5%;
@@ -49,14 +50,15 @@ body{
 }
 .header-item.header-right{
     background: rgba(0,0,0,0.5);
-    border-radius: 10px;
+    border-radius: var(--border-radius-large);
 }
 
 #header-btn{
+    text-decoration: none;
     font-size: 15px;
     background-color: transparent;
     border: 1px solid lightblue;
-    border-radius: 5px;
+    border-radius:  var(--border-radius-small);
     width: 100%;
     outline: none;
     color: lightblue;
@@ -65,7 +67,37 @@ body{
     background-color: lightblue;
     color: white;
 }
+#about{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 5% 10%;
+    background-color: lightgrey;
 
-#main-container{
-    padding: 0 10%;
 }
+    .about-item{
+        padding: 0 1em;
+    }
+        .about-head{
+            margin:0;
+        }
+        #about-paragraph{
+            text-align: justify;
+        }
+        #about-btn{
+            border: none;
+            padding: 0.83em 0.83em; 
+            width: 60%;
+            font-size: 15px;
+            border-radius: var(--border-radius-small);
+            background: var(--main-color);
+        }
+        #about-btn:hover{
+            background-color: white;
+            color: var(--main-color);
+            border: 1px solid var(--main-color);
+        }
+        .about-img{
+            border: 5px solid var(--main-color);
+            border-radius: var(--border-radius-large);
+            width: 100%;
+        }
