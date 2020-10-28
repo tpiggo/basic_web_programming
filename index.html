@@ -9,8 +9,8 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
         <link rel="stylesheet" type="text/css" href="styles/themes.css" />
         <link rel="stylesheet" type="text/css" href="styles/main.css">
+        <link rel="stylesheet" type="text/css" href="styles/index.css">
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script type="text/javascript" src="javascript/projectsDescriptions.js"></script>
         <script type="text/javascript" src="javascript/index.js"></script>
         <meta charset="utf-8" />
 
@@ -22,7 +22,7 @@
         <nav id="navbar-container">
             <a id="navbar-icon" href="#home"><img id="logo-icon" src="images/t-logo2.jpg"></a>
             <div id="nav-right">
-                <a class="navbar-item" href="#home">Home</a>
+                <a class="navbar-item" href="#header">Home</a>
                 <a class="navbar-item" href="#about">About</a>
                 <a class="navbar-item" href="#projects">Projects</a>
                 <a class="navbar-item" href="#contact">Contact</a>
@@ -44,7 +44,7 @@
             </div>
         </header>
         <div id="main-container">
-            <section id="about">
+            <section class="content-box" id="about">
                 <div class="about-item">
                     <h2 class="about-head"> Hello There!</h2>
                     <p id="about-paragraph">    
@@ -56,23 +56,36 @@
                 </div>
                 <div class="about-item"><img class="about-img" src="images/internet-computer-pic.jpg"></div>
             </section>
-            <section id="projects">
+            <section class="content-box" id="projects">
                 <h2 id="projects-header">My Latest Work</h2>
                 <div id="projects-box">
-                    <div id="pid1" class="project-item"></div>
-                    <div id="pid2" class="project-item"></div>
-                    <div id="pid3" class="project-item"></div>
+                    <div id="pid1" class="project-item">
+                        <img class='project-image' src="images/blog-page.png">
+                        <p>Simple Blog utilizing HTML with Javascript in combination with CSS to render pages based on specifications.</p>
+                    </div>
+                    <div id="pid2" class="project-item">
+                        <img class='project-image' src="images/blog-page.png">
+                        <p>Building an Apache backend login and registration handler with encryption</p>
+                    </div>
+                    <div id="pid3" class="project-item">
+                        <img class='project-image' src="images/blog-page.png">
+                        <p>Handling concurrent connections to a server in C.</p>
+                    </div>
+                    <div id="pid4" class="project-item">
+                        <img class='project-image' src="images/blog-page.png">
+                        <p>Building a concurrent user level threading program using the FCFS scheduling algorithm.</p>
+                    </div>
                 </div>
                 <h2>More coming soon!</h2>
             </section>
-            <section id="skills">
+            <section class="content-box" id="skills">
                 Tech skills
             </section>
-            <section id="contact">
+            <section class="content-box" id="contact">
                 Contact info
             </section>
         </div>
-        <footer id="main-footer">
+        <footer class="content-box" id="main-footer">
             <!-- Need contact and SM info here-->
             Main info and copyright stuff
         </footer>
